@@ -1,0 +1,135 @@
+MEET CLASS COMPANION - INSTALLATION GUIDE
+==========================================
+
+Two roles. Students install a Chrome extension. Professors install nothing:
+they use a web page.
+
+
+------------------------------------------------------------
+FOR STUDENTS
+------------------------------------------------------------
+
+You need:
+  - A computer (not a phone or tablet)
+  - Google Chrome 120 or newer
+  - The CLASS CODE from your professor (8 characters, like K7M2QX9P)
+
+INSTALL (about 2 minutes)
+
+  1. Unzip the file you were sent into a folder you will KEEP
+     (for example Documents\MeetCompanion). Do not delete or move it later,
+     because Chrome reads the extension from that folder.
+  2. In Chrome, open:  chrome://extensions
+  3. Switch on "Developer mode" (top right).
+  4. Click "Load unpacked" and select the folder that contains manifest.json.
+  5. Click the puzzle-piece icon in Chrome's toolbar and pin
+     "Meet Class Companion" (a chalkboard with a yellow tick).
+  6. If you already had a Google Meet tab open, refresh it.
+
+USE IT
+
+  1. Open your Meet link. In the waiting room, a window asks:
+     "Your choice: share an attention log for this class?"
+  2. Type the class code in the box and press "Link class". The text updates
+     and now names your professor and class.
+  3. Enter your name and your student number.
+  4. Read the text, then choose "Turn on the attention log" or
+     "No thanks, do not track me". Both are fine. Nothing is recorded or
+     uploaded until you choose.
+  5. A small badge in the top-left of Meet shows "Attention log on" or "off".
+  6. Notes tool (works whether or not you accept): click the extension icon
+     to open the side panel. Type notes, press "Capture slide" to screenshot
+     what the professor is presenting (you crop it before it is saved), and
+     export to Markdown or PDF. Your notes and screenshots stay on your
+     computer and are never uploaded.
+
+WHAT THE LOG RECORDS (only if you accept)
+
+  - When you switch tabs or windows, when Chrome loses focus, and when you leave
+  - Whether you answered the "Are you still there?" box, and how fast
+  - When you are taking notes (the time only, never what you wrote)
+
+  It cannot see which other apps or websites you use. The "My log" tab in the
+  side panel shows exactly what has been recorded.
+
+EDITING YOUR NAME OR STUDENT NUMBER (even after you said yes)
+
+  You can change them at any time, whether the log is on, off or not set yet.
+  Two ways:
+
+  A. In Meet: click the small badge in the top-left ("Attention log on").
+     Under "Your details", change your name or student number and press
+     "Save details".
+
+  B. In the side panel: click the extension icon, open the "Privacy" tab,
+     change the fields under "Your details", and press "Save details".
+
+  Good to know: new details apply from your NEXT class. A class that is
+  already in progress keeps the name and number it started with, because
+  records already written are never rewritten. If you fixed a typo, tell your
+  professor which class it affected.
+
+CHANGING YOUR MIND OR YOUR CLASS
+
+  - Stop sharing: click the badge, then "Stop sharing my log". Logging stops
+    at once and your record gets one line:
+    "No tracking record. Student declined tracking."
+  - Turn it back on: click the badge, then "Turn on the attention log".
+  - Different class: click the badge, then "Change class" and enter the new
+    code. You will be asked for your choice again, because a different
+    professor would see your log.
+
+UPDATING THE EXTENSION
+
+  Put the new files in the same folder (replace the old ones), then press the
+  reload arrow on the extension at chrome://extensions.
+
+
+------------------------------------------------------------
+FOR PROFESSORS (nothing to install)
+------------------------------------------------------------
+
+SET UP YOUR CLASS (once)
+
+  1. Open https://class-companion-ce085.web.app in any browser.
+  2. Sign in with Google.
+  3. Under "Create a class", fill in the class name, your name (students see
+     it in the consent form), your email, and how many days to keep the data
+     (default 120). UNTICK "Email me a report after each meeting".
+  4. Press "Create class and get the class code". You will see an 8-character
+     code.
+  5. Send the code to your students. They enter it once in the extension.
+
+DURING AND AFTER A MEETING
+
+  1. Run your Google Meet call as usual. Students with the extension join it
+     as normal.
+  2. Open the dashboard, click your class, then press "Refresh". Your meeting
+     appears in the "Meetings" table (one row per meeting and day).
+  3. Click the meeting. You get a table with one row per student:
+       Engaged          Time on the class tab (includes note-taking).
+       Confirmed idle   Time after an "Are you still there?" box went
+                        unanswered.
+       Away             Tab switched, Chrome unfocused, or screen locked.
+       Not monitored    The extension was not running.
+       Log integrity    "Intact" means the log was not edited after it was
+                        written.
+  4. Click a student to see their timeline and every event, with two download
+     buttons: "Events CSV" and "Detailed file (.json)".
+  5. "Download summary CSV" gives the whole class in one spreadsheet.
+  6. Under the table, the dashboard lists students who linked the class but
+     have no record for this meeting. It cannot tell whether they were
+     absent, on a phone, or not using the extension.
+
+READING IT FAIRLY
+
+  Treat the numbers as something to discuss with a student, not a verdict.
+  Picture-in-picture, a second monitor and a locked screen have their own
+  rows and are never counted for or against anyone. A student who declined
+  shows as "Declined tracking".
+
+IF A STUDENT'S UPLOAD FAILED
+
+  Ask them for the file from "My log" > "Hand-in file (.json)". Then open
+  report\professor-report-viewer.html from the extension folder (double-click
+  it, it works offline) and drop the file in.
